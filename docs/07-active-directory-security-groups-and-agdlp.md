@@ -283,7 +283,7 @@ The `Groups` Organizational Unit was created during the previous Active Director
 
 I will use this OU to store the custom security groups.
 
-![alt text](../images/07/01-groups-organizational-unit.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/01-groups-organizational-unit.png)
 
 *Figure 1: Opening the Groups Organizational Unit in Active Directory Users and Computers.*
 
@@ -327,7 +327,7 @@ I entered the following information:
 
 The group was created inside the Groups OU.
 
-![alt text](../images/07/02-create-hr-global-group.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/02-create-hr-global-group.png)
 
 *Figure 2: Creating the GG-HR-Users Global Security Group.*
 
@@ -376,7 +376,7 @@ After creating the groups, I verified that all four Global Security Groups appea
 
 ### Screenshot
 
-![alt text](../images/07/03-global-security-groups.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/03-global-security-groups.png)
 
 *Figure 3: Verifying the four departmental Global Security Groups.*
 
@@ -434,7 +434,7 @@ I confirmed that the following employees appeared in the Members tab:
 | Olivia Martin  | olivia.martin  |
 | James Anderson | james.anderson |
 
-![alt text](../images/07/04-hr-global-group-members.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/04-hr-global-group-members.png)
 
 *Figure 4: Adding HR employee accounts to the GG-HR-Users security group.*
 
@@ -467,7 +467,7 @@ Next, I added Finance employees to:
 | Daniel Taylor | daniel.taylor |
 | Emily White   | emily.white   |
 
-![alt text](../images/07/05-finance-group-members.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/05-finance-group-members.png)
 
 *Figure 5: Verifying the Finance Global Security Group membership.*
 
@@ -492,7 +492,7 @@ I used the Members tab of the group properties to add the employee accounts.
 
 ### Screenshot
 
-![alt text](../images/07/06-sales-group-members.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/06-sales-group-members.png)
 
 *Figure 6: Verifying Sales employee membership in the Global Security Group.*
 
@@ -525,7 +525,7 @@ It does not grant Domain Administrator privileges.
 This supports the principle of least privilege.
 
 ### Screenshot
-![alt text](../images/07/07-it-group-members.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/07-it-group-members.png)
 
 *Figure 7: Verifying IT employee membership in the GG-IT-Users group.*
 
@@ -569,7 +569,7 @@ These groups will later be used to assign permissions to shared folders.
 | Intended Permission | Modify           |
 | Intended Resource   | HR Shared Folder |
 
-![alt text](../images/07/08-create-domain-local-group.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/08-create-domain-local-group.png)
 
 *Figure 8: Creating the Domain Local Security Group for HR shared-folder permissions.*
 
@@ -590,7 +590,7 @@ The following Domain Local Security Groups were created:
 
 All four groups were created inside the Groups OU.
 
-![alt text](../images/07/09-domain-local-security-groups.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/09-domain-local-security-groups.png)
 
 *Figure 9: Verifying the Domain Local Security Groups.*
 
@@ -642,7 +642,7 @@ DL-FS-HR-Modify
 ```
 
 ### Screenshot
-![alt text](../images/07/10-agdlp-group-nesting.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/10-agdlp-group-nesting.png)
 
 *Figure 10: Adding the HR Global Security Group to the HR Domain Local Security Group.*
 
@@ -667,7 +667,7 @@ This completes the group membership portion of the AGDLP model.
 
 ### Screenshot
 
-![alt text](../images/07/11-verify-group-nesting.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/11-verify-group-nesting.png)
 *Figure 11: Verifying the Global Group membership within the corresponding Domain Local Group.*
 
 ---
@@ -712,7 +712,7 @@ The output displays:
 
 The expected group scopes are Global and DomainLocal.
 
-![alt text](../images/07/12-verify-security-groups-powershell.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/12-verify-security-groups-powershell.png)
 
 *Figure 12: Verifying Active Directory Security Groups using PowerShell.*
 
@@ -750,7 +750,7 @@ James Anderson
 
 I repeated the verification for the other departmental Global Groups.
 
-![alt text](../images/07/13-verify-global-group-members.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/13-verify-global-group-members.png)
 
 *Figure 13: Verifying employee membership in the HR Global Security Group.*
 
@@ -797,7 +797,7 @@ Emma Wilson
 Olivia Martin
 James Anderson
 ```
-![alt text](../images/07/14-verify-nested-group-membership.png)
+![alt text](../images/07-active-directory-security-groups-and-agdlp/14-verify-nested-group-membership.png)
 
 *Figure 14: Verifying nested group membership using PowerShell.*
 
