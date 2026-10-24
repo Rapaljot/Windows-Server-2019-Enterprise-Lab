@@ -18,7 +18,7 @@ For this lab, DC01 is configured as both an Active Directory Domain Controller a
 | Virtualization | VMware Workstation |
 | Server Name | DC01 |
 | Active Directory Domain | rapaljotlab.local |
-| Server IP Address | [192.168.164.10] |
+| Server IP Address | 192.168.164.10 |
 | Server Role | DNS Server |
 | DNS Zone | rapaljotlab.local |
 
